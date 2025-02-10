@@ -5,8 +5,12 @@
 using namespace std;
 int main()
 {
-    double height = 6, length = 100, area, paint = 340, coat = 2, required;
-
+    // Input
+    double height, length, area, paint = 340, coat = 2, required;
+    cout << "Please enter the height and the length of the fence:" << endl;
+    cin >> height >> length;
+    
+    // Output
     area = height * length * coat;
     required = area / 340;
     cout << "The required number of gallons to paint the area is " << required << " gallons." << endl;
